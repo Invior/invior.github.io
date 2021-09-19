@@ -6,6 +6,8 @@
 	<meta name="author" content="Andrey">
 	<meta name="robots" content="Это моя первая страница...">
 	<title>Андрей Соляр - Веб-разработчик</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -34,33 +36,37 @@
 	<div class="about_me">
 		<h2>Обо мне</h2>
 		<hr>
-		<img src="img/MyPhoto.jpg" alt="photo" width="70px" height="70px">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti. Nulla natus similique fuga omnis, quae, dolorem cupiditate amet, neque voluptas earum modi et?</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti. Nulla natus similique fuga omnis, quae, dolorem cupiditate amet, neque voluptas earum modi et?</p>
+		<img src="img/MyPhoto.jpg" alt="photo">
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti.</p>
+		</div>	
 		<input type="button" value="Скачать резюме">
 	</div>
 	<div class="my_skill">
 		<h2>Что я умею</h2>
 		<hr>
-		<div class="skill">
-			<img src="img/icon1.png" alt="icon1">
-			<h5>Веб-дизайн</h5>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
-		</div>
-		<div class="skill">
-			<img src="img/icon2.png" alt="icon2">
-			<h5>Разработка</h5>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
-		</div>
-		<div class="skill">
-			<img src="img/icon3.png" alt="icon3">
-			<h5>CEO-оптимизация</h5>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
-		</div>
-		<div class="skill">
-			<img src="img/icon4.png" alt="icon4">
-			<h5>Маркетинг</h5>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
+		<div class="skills">
+			<div class="skill">
+				<img src="img/icon1.png" alt="icon1">
+				<h5>Веб-дизайн</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
+			</div>
+			<div class="skill">
+				<img src="img/icon2.png" alt="icon2">
+				<h5>Разработка</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
+			</div>
+			<div class="skill">
+				<img src="img/icon3.png" alt="icon3">
+				<h5>CEO-оптимизация</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
+			</div>
+			<div class="skill">
+				<img src="img/icon4.png" alt="icon4">
+				<h5>Маркетинг</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus voluptate deserunt eum impedit iusto.</p>
+			</div>
 		</div>
 	</div>
 	<div class="case">
@@ -68,19 +74,24 @@
 		<hr>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, in officiis aperiam, non quis ipsa?</p>
 		<div class="works">
-			<img src="img/site.png" alt="Здесь должна быть карусель" width="90%" height="600px">
-			<h4>CLIENT</h4>
-			<p>Какая-то компания</p>
-			<h4>WEBSITE</h4>
-			<p>http://www.somedomain.com</p>
-			<h4>Название проекта</h4>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam molestiae fuga exercitationem numquam nihil ad autem repellendus similique debitis consectetur ipsam, maiores quas quisquam.</p>
-			<input type="button" value="VISIT LIVE SITE">
+			<img src="img/site.png" alt="Здесь должна быть карусель">
+			<div class="web">
+				<h4>CLIENT:</h4>
+				<p>Какая-то компания</p>
+				<h4>WEBSITE:</h4>
+				<p>http://www.somedomain.com</p>
+				<input type="button" value="VISIT LIVE SITE">
+			</div>
+			<div class="project">
+				<h4>Название проекта</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam molestiae fuga exercitationem numquam nihil ad autem repellendus similique debitis consectetur ipsam, maiores quas quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam molestiae fuga exercitationem numquam nihil ad autem repellendus similique debitis consectetur ipsam, maiores quas quisquam.</p>
+			</div>
+			
 		</div>
 	</div>
 	<div class="cost_calc">
 		<h2>Расчет стоимости</h2>
-		<form action="#">
+		<form class="form_calc" action="#">
 			<h4>ТИП САЙТА</h4>
 			<select name="site__type" id="#">
 				<option hidden>Выберите пункт...</option>
@@ -98,34 +109,36 @@
 				<option hidden>Выберите пункт...</option>
 				<option value="1">Первый тип</option>
 				<option value="2">Второй тип</option>
-			</select>
-			<h5>Сроки</h5>
-			<h5>Стоимость</h5>
+			</select>	
 		</form>
+		<h5>Сроки</h5>
+		<h5>Стоимость</h5>
 	</div>
 	<div class="statistics">
 		<h2>НЕМНОГО СТАТИСТИКИ</h2>
 		<hr>
-		<div>
-			<img src="img/icon5.png" alt="icon5">
-			<h5>0</h5>
-			<p>Счастливых клиентов</p>
-		</div>
-		<div>
-			<img src="img/icon6.png" alt="icon6">
-			<h5>0</h5>
-			<p>Часов работы</p>
-		</div>
-		<div>
-			<img src="img/icon7.png" alt="icon7">
-			<h5>0</h5>
-			<p>Проектов завершено</p>
-		</div>
-		<div>
-			<img src="img/icon8.png" alt="icon8">
-			<h5>0</h5>
-			<p>Наград получено</p>
-		</div>
+		<div class="stat">
+			<div class="point">
+				<img src="img/icon5.png" alt="icon5">
+				<h5>0</h5>
+				<p>Счастливых клиентов</p>
+			</div>
+			<div class="point">
+				<img src="img/icon6.png" alt="icon6">
+				<h5>0</h5>
+				<p>Часов работы</p>
+			</div>
+			<div class="point">
+				<img src="img/icon7.png" alt="icon7">
+				<h5>0</h5>
+				<p>Проектов завершено</p>
+			</div>
+			<div class="point">
+				<img src="img/icon8.png" alt="icon8">
+				<h5>0</h5>
+				<p>Наград получено</p>
+			</div>
+		</div>	
 	</div>
 	<div class="reviews">
 		<h2>ОТЗЫВЫ</h2>
@@ -140,19 +153,29 @@
 		<h2>МОИ КОНТАКТЫ</h2>
 		<hr>
 		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim tempore, illo laboriosam natus neque sunt.</p>
-		<img src="img/icon9.png" alt="icon9">
-		<p>Тольятти, Революционная 52А</p>
-		<img src="img/icon10.png" alt="icon10">
-		<p>twhlost@gmail.com</p>
-		<img src="img/icon11.png" alt="icon11">
-		<p>+79999999999</p>
-		<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-		<form action="#">
-			<input type="text" placeholder="Имя">
-			<input type="email" placeholder="Email">
-			<textarea name="#" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-			<input type="submit" value="Отправить">
-		</form>
+		<div class="inform">
+			<div class="information">
+				<img src="img/icon9.png" alt="icon9">
+				<p>Тольятти, Революционная 52А</p>
+			</div>
+			<div class="information">
+				<img src="img/icon10.png" alt="icon10">
+				<p>twhlost@gmail.com</p>
+			</div>
+			<div class="information">
+				<img src="img/icon11.png" alt="icon11">
+				<p>+79999999999</p>
+			</div>
+		</div>
+		<div class="message">
+			<form action="#">
+				<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+				<input class="field" id="mes" type="text" placeholder="Имя">
+				<input class="field" type="email" placeholder="Email">
+				<textarea name="#" id="" placeholder="Сообщение"></textarea>
+				<input class="button" type="submit" value="Отправить">
+			</form>
+		</div>	
 		<div class="social">
 			<a href="#"><img src="img/fc.png" alt="Facebook"></a>
 			<a href="#"><img src="img/tw.png" alt="Twitter"></a>
@@ -160,8 +183,8 @@
 			<a href="#"><img src="img/git.png" alt="GitHub"></a>
 		</div>
 	</div>
-	<footer>
-		Copyright © 2021 Андрей Соляр. Design by Web
+	<footer class="basement">
+		<h6>Copyright © 2021 Андрей Соляр. Design by Web</h6>
 	</footer>
 </body>
 </html>
