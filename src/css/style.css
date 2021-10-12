@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, sans-serif;
+	font-family: FranklinGothic-Medium, sans-serif;
 }
 
 nav {
@@ -11,7 +11,7 @@ nav {
 }
 
 h2 {
-	margin-top: 10%;
+	margin-top: 90px;
 	font-size: 30px;
 	text-transform: uppercase;
 	text-align: center;
@@ -232,7 +232,7 @@ hr {
 
 .about_me {
 	text-align: center;
-	height: 100%;
+	padding-bottom: 60px;
 }
 
 .about_me hr {
@@ -426,6 +426,11 @@ hr {
 	color: #747474;
 	background: #EEEEEE;
 	border-radius: 5px;
+}
+
+	option {
+	color: #000;
+	font-size: 18px;
 }
 
 .form_calc select:hover {
