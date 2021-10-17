@@ -28,16 +28,25 @@ hr {
 	opacity: 1;
 }
 
+#btn {
+	display: none;
+}
+
 /*Navbar*/
 
-.logo {
+.logo a{
 	color: #fff;
 	font-size: 28px;
 	line-height: 60px;
 	float: left;
+	text-decoration: none;
 	animation: comming 2s ease;
 	-webkit-animation: comming 2s ease;
 	-o-animation: comming 2s ease;
+}
+
+.menu li .active {
+	color:  #FF8400;
 }
 
 .menu {
@@ -70,9 +79,6 @@ hr {
 	color: #fff;
 }
 
-.menu li a:visited {
-	color: #fff;
-}
 
 .menu li a:hover {
 	color: #FF8400;
@@ -228,6 +234,7 @@ hr {
 	}
 }
 
+
 /*About Me*/
 
 .about_me {
@@ -287,12 +294,33 @@ hr {
 	margin-bottom: 110px;
 }
 
-.skills {
+/*.skills {
 	animation: skillmove 0.8s ease forwards;
 	-webkit-animation: skillmove 0.8s ease forwards;
 	-o-animation: skillmove 0.8s ease forwards;
 	opacity: 0;
+}*/
+
+.element-animations {
+	opacity: 0;
+	margin-left: -500px;
 }
+
+.element-animations.show-animation {
+	opacity: 1;
+	margin-left: 0;
+	transition: all ease 1.5s;
+}
+
+/*@keyframes skillmove {
+	from {
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to {
+		opacity: 1;
+	}
+}*/
 
 .skill {
 	text-align: center;
@@ -404,6 +432,14 @@ hr {
 	text-align: left;
 }
 
+.term {
+	margin-left: 854px;
+}
+
+.cost {
+	margin-left: 812px;
+}
+
 .forms h2 {
 	padding-top: 90px;
 }
@@ -480,12 +516,12 @@ hr {
 	margin-bottom: 89px;
 }
 
-.stat {
+/*.stat {
 	animation: statmove 0.8s ease forwards;
 	-webkit-animation: statmove 0.8s ease forwards;
 	-o-animation: statmove 0.8s ease forwards;
 	opacity: 0;
-}
+}*/
 
 .point {
 	text-align: center;
@@ -727,17 +763,8 @@ width: 127px;
 	}
 }
 
-@keyframes skillmove {
-	from {
-		opacity: 0;
-		margin-left: -500px;
-	}
-	to {
-		opacity: 1;
-	}
-}
 
-@keyframes statmove {
+/*@keyframes statmove {
 	from {
 		opacity: 0;
 		margin-left: -500px;
@@ -745,4 +772,4 @@ width: 127px;
 	to {
 		opacity: 1;
 	}
-}
+}*/
