@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +21,7 @@
 		<nav>
 			<div class="container">
 				<div class="row">
-					<div class="col-xxl-2 col-lg-3 col-7"><div class="logo"><a href="#">Андрей Соляр</a></div></div>
+					<div class="col-xxl-2 col-lg-3 col-sm-2 col-7"><div class="logo"><a href="#">Андрей Соляр</a></div></div>
 					<div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
 						<div class="menu">
 							<ul>
@@ -31,7 +34,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+					<div class="col-5 col-sm-2 offset-sm-8 d-flex d-lg-none flex-column justify-content-center align-items-end">
 						<div class="dropdown">
 						  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
 						    Навигация
@@ -70,7 +73,7 @@
 				<div class="col-lg-8 offset-lg-2">
 					<h2>Обо мне</h2>
 					<hr>
-					<img src="img/MyPhoto.jpg" alt="photo">
+					<img src="img/MyPhoto1.jpg" data-src="img/MyPhoto.jpg" class="load" alt="photo">
 					<div class="text">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti.</p>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat debitis esse. Consequatur, vel sunt. Beatae repudiandae ipsa neque corrupti.</p>
@@ -125,13 +128,13 @@
 					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
-					      <img src="img/site.png" class="d-block w-100" alt="site">
+					      <img src="img/site1.jpg" data-src="img/site.png" href="img/site.png" class="d-block w-100 load" alt="site">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="img/dev1.jpg" class="d-block w-100" alt="dev1">
+					      <img src="img/dev.jpg" data-src="img/dev1.jpg" href="img/dev1.jpg" class="d-block w-100 load" alt="dev1">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="img/dev2.jpg" class="d-block w-100" alt="dev2">
+					      <img src="img/dev2.jpg" data-src="img/dev22.jpg" href="img/dev2.jpg" class="d-block w-100 load" alt="dev2">
 					    </div>
 					  </div>
 					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
@@ -245,10 +248,22 @@
 				<div class="col-lg-8 offset-lg-2">
 					<h2>ОТЗЫВЫ</h2>
 					<hr>
-					<div class="customer">
-						<img src="img/customer.png" alt="Фото клиента">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores numquam expedita provident quo consequuntur in beatae tempore. Quaerat, est.</p>
-						<p><b>Михаил</b>, Гендиректор ПАО "Газпром"</p>
+					<div class="owl-carousel owl-theme">
+						<div class="customer">
+							<img src="img/customer.png" alt="Фото клиента" class="review">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores numquam expedita provident quo consequuntur in beatae tempore. Quaerat, est.</p>
+							<p><b>Михаил</b>, Гендиректор ПАО "Газпром"</p>
+						</div>
+						<div class="customer">
+							<img src="img/customer.png" alt="Фото клиента" class="review">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores numquam expedita provident quo consequuntur in beatae tempore. Quaerat, est.</p>
+							<p><b>Алексей</b>, Индивидуальный предприниматель</p>
+						</div>
+						<div class="customer">
+							<img src="img/customer.png" alt="Фото клиента" class="review">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores numquam expedita provident quo consequuntur in beatae tempore. Quaerat, est.</p>
+							<p><b>Дмитрий</b>, Счастливый клиент</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -329,10 +344,15 @@
 	</footer>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/myScripts.js"></script>
 	<script src="js/animation.js"></script>
 	<script src="js/number.js"></script>
 	<script src="js/calculator.js"></script>
 	<script src="js/modal.js"></script>
+	<script src="js/modalimg.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/loadimg.js"></script>
 </body>
 </html>
