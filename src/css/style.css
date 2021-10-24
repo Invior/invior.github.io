@@ -5,7 +5,7 @@ body {
 .nav {
 	width: 100%;
 	height: 60px;
-	background: #344051;
+	background: #7F8161;
 	position: fixed;
 	z-index: 3;
 	display: block;
@@ -21,16 +21,12 @@ h2 {
 
 
 hr {
-	border-top: 3px solid #EA7800;
+	border-top: 3px solid #C79E96;
 	margin-top: 25px;
 	margin-right: calc(50% - 35px);
 	margin-left: calc(50% - 35px);
-	color: #EA7800;
+	color: #C79E96;
 	opacity: 1;
-}
-
-#btn {
-	display: none;
 }
 
 /*-------------------------------------------------------------Navbar-----------------------------------------------------------------*/
@@ -47,7 +43,7 @@ hr {
 }
 
 .menu li .active {
-	color:  #FF8400;
+	color:  #C79E96;
 }
 
 .menu {
@@ -71,6 +67,10 @@ hr {
 	text-decoration: none;
 }
 
+.burger-menu {
+	display: none;
+}
+
 .white-btn {
 	color: #fff;
 	border: 2px solid #fff;
@@ -81,11 +81,11 @@ hr {
 }
 
 .menu li a:hover {
-	color: #FF8400;
+	color: #C79E96;
 }
 
 .menu li a:active {
-	color: #FF8400;
+	color: #C79E96;
 	transform: scale(1.1);
 }
 
@@ -162,8 +162,9 @@ hr {
 
 .title__container button:hover {
 	cursor: pointer;
-	background: #344051;
+	background: #C79E96;
 	color: #fff;
+	border: #C79E96;
 }
 
 .title__container input:active {
@@ -207,8 +208,9 @@ hr {
 
 .about_me button:hover {
 	cursor: pointer;
-	background: #344051;
+	background: #C79E96;
 	color: #fff;
+	border: #C79E96;
 }
 
 .about_me input:active {
@@ -233,12 +235,17 @@ hr {
 	margin-bottom: 125px;
 }
 
+.img_skill {
+	font-size: 55px;
+	margin-bottom: 37px;
+}
+
 .skill img {
 	margin-bottom: 37px;
 } 
 
 .skill h5 {
-	color: #E98A2E;
+	color: #C79E96;
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -284,10 +291,10 @@ hr {
 }
 
 .web button {
-	border: 1px solid #00B6AF;
-	border-radius: 3px;
-	background: #00B6AF;
-	color: #fff;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
 	height: 43px;
 	width: 202px;
 	font-weight: bold;
@@ -297,13 +304,19 @@ hr {
 }
 
 .web button:hover {
-	background: #344051;
-	border: 1px solid #344051;
+	background: #C79E96;
 	color: #fff;
+	border: #C79E96;
 }
 
 .web input:active {
 	transform: scale(1.1);
+}
+
+.web button:focus {
+	background: #C79E96;
+	color: #fff;
+	border: #C79E96;
 }
 
 .project {
@@ -381,35 +394,63 @@ hr {
 	cursor: pointer;
 }
 
-.cost_calc button {
+.cost_btn {
 	width: 150px;
-	background: #00B6AF;
-	border: 2px solid #00B6AF;
+	background: none;
+	border: 2px solid #6d7682;
 	border-radius: 5px;
 	font-size: 13px;
 	padding: 10px;
 	margin-bottom: 40px;
 	margin-top: 20px;
-	color: #fff;
+	color: #6d7682;
 	transition: all 0.2s;
 	transform: scale(1);
 }
 
-.cost_calc button:hover {
-	background: #344051;
-	border: 1px solid #344051;
+.cost_btn:hover {
+	background: #C79E96;
 	color: #fff;
+	border: #C79E96;
 }
 
-.cost_calc button:active {
+.cost_btn:active {
 	transform: scale(1.1);
+}
+
+.cost_btn:focus {
+	background: #C79E96;
+	color: #fff;
+	border: #C79E96;
 }
 
 .forms {
 	box-shadow: 0 0 15px;
-
 }
 
+.btn_dis {
+	width: 90px;
+	text-align: center;
+	background: none;
+	border: 2px solid #6d7682;
+	border-radius: 5px;
+	color: #6d7682;
+}
+
+.btn_sub {
+	width: 20%;
+	margin-left: 20px;
+	text-align: center;
+	background: #C79E96;
+	color: #fff;
+	border: 2px solid #C79E96;
+}
+
+.btn_sub:hover {
+	background: #7F8161;
+	color: #fff;
+	border: 2px solid #7F8161;
+}
 /*------------------------------------------------------------Statistics--------------------------------------------------------------*/
 
 .statistics {
@@ -427,9 +468,11 @@ hr {
 	text-align: center;
 }
 
-.point img {
+.img_stat {
+	font-size: 55px;
+	color: #C79E96;
 	margin-bottom: 37px;
-} 
+}
 
 .point>h5 {
 	color: #283C4F;
@@ -487,16 +530,19 @@ hr {
 
 .information {
 text-align: center;
-width: 127px;
+width: 180px;
 }
 
-.information p {
+.information p a{
 	color: #fff;
 	margin-bottom: 38px;
+	text-decoration: none;
 }
 
-.information img {
+.img_inform {
+	color: #fff;
 	margin-bottom: 17px;
+	font-size: 25px;
 }
 
 .message h3 {
@@ -537,8 +583,9 @@ width: 127px;
 
 .message button:hover {
 	cursor: pointer;
-	background: #FF8400;
-	border: #FF8400;
+	background: #C79E96;
+	color: #fff;
+	border: #C79E96;
 }
 
 .social a {
@@ -548,11 +595,11 @@ width: 127px;
 }
 
 .social a:hover {
-	color: #FF8400;
+	color: #C79E96;
 }
 
 .basement {
-	background: #2C3E51;
+	background: #7F8161;
 	height: 93px;
 	text-align: center;
 }
@@ -685,6 +732,11 @@ width: 127px;
 		width: 100%;
 	}
 
+	.element-animations {
+	opacity: 1;
+	margin-left: 0;
+}
+
 }
 
 
@@ -766,6 +818,9 @@ width: 127px;
 	.social {
 		margin-bottom: 20px;
 	}
+
+	/*---------------------------------------------------------------*/
+	
 
 }
 
@@ -864,7 +919,106 @@ width: 127px;
 
 }
 
-/*------------------------------------------1400(xxl)-----------------------------------------------------*/
+/*------------------------------------------992(burger)-----------------------------------------------------*/
+@media (max-width: 991px) {
+
+.title__container, .title__container h4, .title__container button {
+		color: #fff;
+		position: relative;
+		z-index: 3;
+	}
+
+.burger-menu {
+	display: block;
+}
+
+	.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right:50px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menubox{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #7F8161;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu-item:hover {
+  background-color: #C79E96;
+  color: #fff;
+}
+
+
+.menu-item:visited {
+	color: #fff;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox{
+  visibility: visible;
+  right: 0;
+}
+}
 
 
 
